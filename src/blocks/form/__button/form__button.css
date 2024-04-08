@@ -1,4 +1,4 @@
-.header__button{
+.form__button{
     color: #F2F4F7;
     font-size: 20px;
     font-style: normal;
@@ -13,15 +13,16 @@
     cursor: pointer;
     transition: box-shadow linear .3s;
     margin-block-end: clamp(3.125rem, 2.5rem + 3.125vw, 6.25rem);
+    border-radius:4px ;
 }
 
-.header__button:hover{
+.form__button:hover{
     box-shadow: 0 0 15px #28337C, 0 0 5px #F2F4F7;
 }
 
 
 @media (width >= 568px){
-    .header__button{
+    .form__button{
         max-inline-size: 285px;
     }
 }

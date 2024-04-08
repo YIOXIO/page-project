@@ -28,4 +28,5 @@
     opacity: 1;
     pointer-events: all;
     transition: visibility 0s, opacity 0.6s;
+    padding-inline: 2.5vw;
 }

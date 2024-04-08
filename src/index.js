@@ -16,17 +16,17 @@ accordionItems.forEach(item => {
         if (accordionContent.classList.contains('accordion__content_active')) {
             accordionContent.style.maxHeight = null;
             accordionContent.classList.remove('accordion__content_active');
-            dropDownIcon.classList.remove('accordion__dropdown-icon-rotated');
+            dropDownIcon.classList.remove('accordion__dropdown-icon_rotated');
         } else {
             // Закрываем все открытые аккордеоны
             document.querySelectorAll('.accordion__content.accordion__content_active').forEach(content => {
                 content.style.maxHeight = null;
                 content.classList.remove('accordion__content_active');
-                content.parentNode.querySelector('.accordion__dropdown-icon').classList.remove('accordion__dropdown-icon-rotated');
+                content.parentNode.querySelector('.accordion__dropdown-icon').classList.remove('accordion__dropdown-icon_rotated');
             });
             // Открываем текущий аккордеон
             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-            dropDownIcon.classList.add('accordion__dropdown-icon-rotated');
+            dropDownIcon.classList.add('accordion__dropdown-icon_rotated');
             accordionContent.classList.add('accordion__content_active');
         }
     });
@@ -41,25 +41,25 @@ buttonClosePopup.addEventListener('click', closePopup)
 
 
 
-window.onload = function() {
-    var textElements = document.querySelectorAll('.typewriter');
+// window.onload = function() {
+//     var textElements = document.querySelectorAll('.typewriter');
 
-    textElements.forEach(function(element) {
-      var text = element.dataset.text;
-      var typedText = '';
-      var index = 0;
+//     textElements.forEach(function(element) {
+//       var text = element.dataset.text;
+//       var typedText = '';
+//       var index = 0;
 
-      var typewriter = setInterval(function() {
-        typedText += text.charAt(index);
-        element.innerHTML = typedText;
-        index++;
+//       var typewriter = setInterval(function() {
+//         typedText += text.charAt(index);
+//         element.innerHTML = typedText;
+//         index++;
 
-        if (index >= text.length) {
-          clearInterval(typewriter);
-        }
-      }, 50);
-    });
-  };
+//         if (index >= text.length) {
+//           clearInterval(typewriter);
+//         }
+//       }, 50);
+//     });
+//   };
 
 
   

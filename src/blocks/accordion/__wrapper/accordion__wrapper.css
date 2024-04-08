@@ -1,6 +1,15 @@
 .accordion__wrapper{
     display: flex;
+    flex-direction: column;
+    gap: clamp(0.625rem, 0.25rem + 1.875vw, 2.5rem);
     align-items: center;
-    gap: 40px;
-    margin-block-end: 40px;
+    margin-block-end: 10px;
+    cursor: pointer;
+}
+
+
+@media (width >= 768px){
+    .accordion__wrapper{
+        flex-direction: row;
+    }
 }

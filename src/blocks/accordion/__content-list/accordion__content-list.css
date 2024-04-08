@@ -1,3 +1,7 @@
+.accordion__content-list{
+    padding-block-start: 30px;
+}
+
 .accordion__content-list>li{
     display: grid;
     grid-template-columns:45.7px 0.956fr 1fr;

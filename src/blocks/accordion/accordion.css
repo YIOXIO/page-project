@@ -7,11 +7,12 @@
 @import './__wrapper/accordion__wrapper.css';
 @import './__content-list/accordion__content-list.css';
 @import './__content/_active.css/accordion__content_active.css';
+@import './__dropdown-icon/accordion__dropdown-icon.css';
+@import './__dropdown-icon/_rotated/accordion__dropdown-icon-rotated.css';
 
 
 .accordion {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    gap: 3px;
 }

@@ -4,3 +4,11 @@
     padding-inline: 2.5vw;
 }
 
+
+
+@media (width >= 1200px){
+    .container{
+        padding-inline: 0;
+    }
+
+}

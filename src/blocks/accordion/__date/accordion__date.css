@@ -8,5 +8,8 @@
     font-weight: 400;
     line-height: normal;
     padding-block: 15.5px;
-    padding-inline: 50px;
+    padding-inline: 16px;
+    max-inline-size: 305px;
+    min-inline-size: 305px;
+    flex-grow: 1;
 }
