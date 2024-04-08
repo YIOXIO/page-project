@@ -1,0 +1,20 @@
+.header__button{
+    color: #F2F4F7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    inline-size: 100%;
+    background-color: #28337C;
+    text-align: center;
+    padding-block: 20px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow linear .3s;
+    margin-block-end: clamp(3.125rem, 2.5rem + 3.125vw, 6.25rem);
+}
+
+.header__button:hover{
+    box-shadow: 0 0 15px #28337C, 0 0 5px #F2F4F7;
+}

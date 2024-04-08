@@ -1,0 +1,6 @@
+.header__date{
+    color: #FFF;
+    font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
+    font-weight: 700;
+    line-height: 39.571px; 
+}

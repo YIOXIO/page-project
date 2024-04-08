@@ -1,0 +1,8 @@
+.header__title{
+    color: #FFF;
+    font-size: clamp(2.25rem, 1.95rem + 1.5vw, 3.75rem);
+    font-weight: 700;
+    line-height: 39.571px;
+    text-transform: uppercase;
+    margin-block-end: 41px;
+}

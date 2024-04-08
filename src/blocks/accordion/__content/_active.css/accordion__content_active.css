@@ -1,0 +1,5 @@
+
+.accordion__content_active {
+    cursor: default;
+    max-height: 1000px;
+}

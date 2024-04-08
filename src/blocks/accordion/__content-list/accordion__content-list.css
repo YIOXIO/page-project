@@ -1,0 +1,10 @@
+.accordion__content-list>li{
+    display: grid;
+    grid-template-columns:45.7px 0.956fr 1fr;
+    margin-block-end: 14px;
+}
+
+.accordion__content-list>li::before{
+    content: url('../../../img/check-icon.svg');
+    display: inline-block;
+}

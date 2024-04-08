@@ -1,0 +1,17 @@
+@import './__answer/accordion__answer.css';
+@import './__content/accordion__content.css';
+@import './__date/accordion__date.css';
+@import './__header/accordion__header.css';
+@import './__item/accordion__item.css';
+@import './__question/accordion__question.css';
+@import './__wrapper/accordion__wrapper.css';
+@import './__content-list/accordion__content-list.css';
+@import './__content/_active.css/accordion__content_active.css';
+
+
+.accordion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    margin: 0 auto;
+    gap: 3px;
+}

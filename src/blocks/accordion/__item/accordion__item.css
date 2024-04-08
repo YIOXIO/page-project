@@ -1,0 +1,9 @@
+.accordion__item {
+    border-radius: 20px;
+    background-color: #FFF;
+    margin-bottom: 3px;
+    min-block-size: 80px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow .35s linear;
+}

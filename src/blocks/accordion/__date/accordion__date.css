@@ -1,0 +1,12 @@
+
+.accordion__date{
+    border-radius: 43px;
+    background: #E6E7E9;
+    color: #09041A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    padding-block: 15.5px;
+    padding-inline: 50px;
+}

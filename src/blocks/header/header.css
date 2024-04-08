@@ -1,0 +1,16 @@
+@import url('./__wrapper/header__wrapper.css');
+@import url('./__logo/header__logo.css');
+@import url('./__title/header__title.css');
+@import url('./__description/header__description.css');
+@import url('./__button/header__button.css');
+@import url('./__date/header__date.css');
+
+
+.header{
+    background-image: url('../../img/mon-background.jpg');
+    padding-block: 98px 105px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-block-end: clamp(4.063rem, 3.188rem + 4.375vw, 8.438rem);
+}
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>финансовые Семинары</title>
+</head>
+<body class="root"> 
+    <header class="header">
+        <div class="container">
+            <article class="header__wrapper">
+                <img class="header__logo" src="<%=require('./img/logo/logo.svg')%>" alt="">
+                <img class="header__logo" src="<%=require('./img/logo/mon-logo.svg')%>" alt="">
+            </article>
+            <h1 class="header__title typewriter" data-text="финансовые Семинары"></h1>
+            <p class="header__description">направлены на развитие профессионального сообщества финансистов <br> и экономистов, которые занимаются планированием, учетом и анализом финансово-хозяйственной деятельности в вузах и научных организациях</p>
+            <button class="header__button">Зарегистрироваться</button>
+            <p class="header__date">25 апреля - 13 декабря 2024</p>
+        </div>
+    </header>
+    <main class="page">
+        <section class="schedule">
+            <div class="container">
+                <h2 class="section-title">График проведения</h2>
+                <p class="section-info">финансовых семинаров</p>
+                <div class="accordion">
+                    <li class="accordion__item">
+                        <article class="accordion__wrapper">
+                            <p class="accordion__date">25-26 апреля 2024 г.</p>
+                            <h3 class="accordion__header">Центральный ФО</h3>
+                            <img class="accordion__dropdown-icon" src="<%=require('./img/dropdown-icon.svg')%>" alt="">
+                        </article>
+                        <article class="accordion__content">
+                            <ul class="accordion__content-list">
+                                <li>
+                                    <p class="accordion__question">Город</p>
+                                    <p class="accordion__answer">Москва</p>
+                                </li>
+                                <li>
+                                    <p class="accordion__question">Площадка проведения</p>
+                                    <p class="accordion__answer">уточняется</p>
+                                </li>
+                                <li>
+                                    <p class="accordion__question">Количество участников от ООВО*</p>
+                                    <p class="accordion__answer">104</p>
+                                </li>
+                                <li>
+                                    <p class="accordion__question">Количество участников от ФОИВ**</p>
+                                    <p class="accordion__answer">26</p>
+                                </li>
+                                <li>
+                                    <p class="accordion__question">Количество участников от Минобрнауки России***</p>
+                                    <p class="accordion__answer">17</p>
+                                </li>
+                                <li>
+                                    <p class="accordion__question">Всего участников</p>
+                                    <p class="accordion__answer">147</p>
+                                </li>
+                            </ul>
+                        </article>
+                    </li>
+                </div>
+            </div>
+        </section> 
+        <div class="popup popup_is_animated">
+            <div class="popup__content">
+                <form class="form" action="/submit-form" method="post">
+                      <button type="button" class="popup__close"></button>
+                    <h2 class="form__header">Регистрация на «Финансовый семинар»</h2>
+                    <ul class="form__list">
+                        <li>
+                            <label class="form__label" for="surname">Фамилия:</label>
+                            <input class="form__input" class="form__input" type="text" placeholder="Иванов" id="surname" name="surname">
+                        </li>
+                        <li>
+                            <label class="form__label" for="name">Имя:</label>
+                            <input class="form__input" type="text" id="name" placeholder="Иван" name="name">
+                        </li>                       
+                        <li>
+                            <label class="form__label" for="patronymic">Отчество:</label>
+                            <input class="form__input" type="text" id="patronymic" placeholder="Иванович" name="patronymic">
+                        </li>                       
+                    </ul>    
+                    <ul class="form__list form__list_long">
+                        <li>                                            
+                            <label class="form__label" for="email">E-mail:</label>
+                            <input class="form__input" type="email" id="email" placeholder="ivanov@mail.ru" name="email">
+                        </li>
+                        <li>
+                            <label class="form__label" for="phone">Телефон:</label>
+                            <input class="form__input" type="tel" id="phone" placeholder="+7 (986) 456-66-45" name="phone">
+                        </li>
+                        <li>
+                            <label class="form__label" for="organization">Название организации:</label>
+                            <input class="form__input" type="text" id="organization" placeholder="Например, ФГБОУ ВО «...»" name="organization">
+                        </li>
+                        <li>
+                            <label class="form__label" for="position">Должность согласно штатному расписанию:</label>
+                            <input class="form__input" type="text" placeholder="Например: Начальник отдела" id="position" name="position">
+                        </li>
+                    </ul>                                            
+                    
+                    <div class="accordion">
+                        <li class="accordion__item">
+                            <article class="accordion__wrapper form-margin">
+                                <h3 class="accordion__header grey">Дополнительное сопровождение (при наличии)</h3>
+                                <img class="accordion__dropdown-icon" src="<%=require('./img/dropdown-icon.svg')%>" alt="">
+                            </article>
+                            <article class="accordion__content">
+                                <ul class="form__list">
+                                    <li>
+                                        <label class="form__label grey-text" for="actual-position">Должность:</label>
+                                        <input class="form__input" type="text" placeholder="Например: Начальник отдела" id="actual-position" name="actual-position">
+                                    </li>         
+                                </ul>
+                                <ul class="form__list">
+                                    <li>
+                                        <label class="form__label grey-text" for="surname">Фамилия:</label>
+                                        <input class="form__input" class="form__input" type="text" placeholder="Иванов" id="surname" name="surname">
+                                    </li>
+                                    <li>
+                                        <label class="form__label grey-text" for="name">Имя:</label>
+                                        <input class="form__input" type="text" id="name" placeholder="Иван" name="name">
+                                    </li>                       
+                                    <li>
+                                        <label class="form__label grey-text" for="patronymic">Отчество:</label>
+                                        <input class="form__input" type="text" id="patronymic" placeholder="Иванович" name="patronymic">
+                                    </li>                       
+                                </ul>    
+                                <ul class="form__list form__list_long">
+                                    <li>
+                                        <label class="form__label grey-text" for="name">Марка транспортного средства</label>
+                                        <input class="form__input" type="text" id="name" placeholder="Например: ЗИЛ-111Г" name="name">
+                                    </li>                       
+                                    <li>
+                                        <label class="form__label grey-text" for="patronymic">Номер транспортного средства</label>
+                                        <input class="form__input" type="text" id="patronymic" placeholder="ОО123К 123" name="patronymic">
+                                    </li>     
+                                </ul>
+                
+                              
+                            </article>
+                        </li>
+                    </div>
+        
+                  
+                    <button class="header__button border">Отправить</button>
+           
+                  </form>
+              </div>
+        </div>
+    </main>
+
+ 
+</body>
+</html>
