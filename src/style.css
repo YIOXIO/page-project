@@ -102,4 +102,60 @@
 .footer{
     min-block-size: 342px;
     background-color: #28337c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.sample-slider{
+    max-inline-size: 600px;
+    border-radius: 34px;
+
+}
+
+
+.sample-slider article{
+    background-color: #fff;
+    color: #000;
+    padding: 34px;
+    max-inline-size: 600px;
+    block-size: 300px;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.gallery__wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+    overflow: hidden;
+    margin: 60px;
+    background: radial-gradient(149.16% 127.86% at 6% 83.83%, #136EB7 0%, #0E4A8F 100%);
+    max-inline-size: 1200px;
+    block-size: 550px;
+    border-radius: 34px;
+}
+
+.swiper-3d .swiper-slide-shadow{
+    border-radius: 34px;
+}
+
+.swiper-3d .swiper-slide-shadow-right{
+    border-radius: 34px;
+}
+.swiper-3d .swiper-slide-shadow-left{
+    border-radius: 34px;
+}
+
+.swiper-creative .swiper-slide{
+    box-shadow: 0 0 10px black;
+    border-radius: 34px;
 }

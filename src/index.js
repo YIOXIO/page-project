@@ -41,28 +41,35 @@ buttonClosePopup.addEventListener('click', closePopup)
 
 
 
-// window.onload = function() {
-//     var textElements = document.querySelectorAll('.typewriter');
-
-//     textElements.forEach(function(element) {
-//       var text = element.dataset.text;
-//       var typedText = '';
-//       var index = 0;
-
-//       var typewriter = setInterval(function() {
-//         typedText += text.charAt(index);
-//         element.innerHTML = typedText;
-//         index++;
-
-//         if (index >= text.length) {
-//           clearInterval(typewriter);
-//         }
-//       }, 50);
-//     });
-//   };
-
-
   
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 
-  
+
+const swiper = new Swiper('.sample-slider', {
+  loop: false,
+  grabCursor:true,
+  speed: 250, 
+  slideShadows:true,
+  slidesPerView: 1,
+  centeredSlides : true,    
+  parallax: true,
+  effect: "cube",
+  creativeEffect: {
+      limitProgress: 4,
+      prev: {
+          translate: [-65, 0, -200],
+          rotate: [0, 0, 0],
+      },
+      next: {
+          translate: ['110%', 0, 0],
+          rotate: [0, 0, 0],
+      },
+  },
+  mousewheel: {
+    forceNiceScroll: true,
+    invert: false,
+  },
+
+})
